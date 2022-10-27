@@ -1,0 +1,207 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
+
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+
+@import "pages/home";
+
+// *,
+// *::after,
+// *::before {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: inherit;
+// }
+
+// html {
+//     font-size: 62.5%;
+// }
+
+// body {
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-weight: 400;
+//     font-size: 1.6rem;
+//     line-height: 1.7;
+//     color: $color-wheat;
+//     padding: 3.0rem; 
+//     box-sizing: border-box;
+
+
+// }
+
+// .header {
+//     height: 95vh;
+//     background: linear-gradient(to right bottom, $color-header-light, $color-header-dark), url("images\ \(45\).jpeg") ;
+//     background-size: cover;
+//     background-position: top;
+//     clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        
+// &__logo-box {
+//     position : absolute;
+//     top: 5.0rem;
+//     left: 5.0rem; 
+// }
+
+// &__logo {
+//     height: 2.5rem;
+
+// }
+
+// &__text-box {
+//     position: absolute;
+//     top: 45%;
+//     left: 50%;
+// transform: translate(-50%, -50%);
+// text-align: center;
+// }
+// }
+
+
+// .heading-primary {
+//     color: $color-dark-red;
+//     text-transform: uppercase;
+//     backface-visibility: hidden;
+//     margin-bottom: 6.0rem;
+
+//     &--main {
+//         display: block;
+//         font-size: 6.0rem;
+//         font-weight: 2em;
+//         letter-spacing: 3.5rem;
+//         animation-name: MoveInLeft;
+//         animation-duration: 1s;
+//         animation-timing-function: ease-out;
+//     }
+    
+//     &--sub {
+//         display: block;
+//         font-size: 2.0rem;
+//         font-weight: 40rem;
+//         letter-spacing: 2.35rem;
+//         animation: MoveInRight 1s ease-out;
+// }
+// }
+
+// @keyframes MoveInLeft {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-10rem);
+//     }
+
+//     80% {
+//         transform: translateX(1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+
+// @keyframes MoveInRight {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(10rem);
+//     }
+
+//     80% {
+//         transform: translateX(-1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+// @keyframes MoveInBottom {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(3.0rem);
+//     }
+
+//     80% {
+//         transform: translateY(-1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+// .btn {
+//     &:link,
+//     &:visited {
+//       text-transform: uppercase;
+//       text-decoration: none;
+//       padding: 1.5rem 4.0rem;
+//       display: inline-block;
+//       border-radius: 10rem;
+//       transition: all .2s;
+//       position: relative;
+//     }
+
+//     &:hover {
+//       transform: translateY(-.3rem);
+//       box-shadow: 0 1rem 2rem $color-shadow;
+    
+//        &:hover::after {
+//          transform: scaleX(1.4) scaleY(1.6);
+//          opacity: 0;
+//         }
+//     }
+
+//     &:active {
+//       transform: translateY(-.1rem);
+//       box-shadow: 0 5rem 1rem $color-dark-grey;
+//     }
+   
+//     &--white {
+//       background-color: $color-white;
+//       color: $color-brown;
+
+//        &::after {
+//          background-color: $color-white;
+//         }
+//     }
+
+//     &::after {
+//       content: "";
+//       display: inline-block;
+//       height: 100%;
+//       width: 100%;
+//       border-radius: 10rem;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       z-index: -1;
+//       transition: .4s;
+//     }
+
+//     &--animated {
+//       animation: MoveInBottom .2s ease-out .75s;
+//       animation-fill-mode: backwards;
+//     } 
+// }

@@ -1,0 +1,118 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 3.5rem;
+      display: inline-block;
+      border-radius: 9rem;
+      transition: all .2s;
+      position: relative;
+      font-size: 1.6rem;
+
+      // change for <button> element in form
+      border: none;
+      cursor: pointer;
+      
+    }
+
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 1rem 2rem $color-shadow;
+    
+       &:hover::after {
+         transform: scaleX(1.4) scaleY(1.6);
+         opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(-.1rem);
+      box-shadow: 0 5rem 1rem $color-dark-grey;
+    }
+   
+    &--white {
+      background-color: $color-white;
+      color: $color-brown;
+      
+      
+
+       &::after {
+         background-color: $color-white;
+        }
+    }
+
+    &--orange {
+      background-color: $dark-yellow;
+      color: $color-white;
+      
+
+       &::after {
+         background-color: $dark-yellow;
+        }
+    }
+
+    &--purple {
+      background-color: $dark-purple;
+      color: $color-wheat;
+      
+      
+
+       &::after {
+         background-color: $dark-purple;
+        }
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: .4s;
+    }
+
+    &--animated {
+      animation: MoveInBottom .2s ease-out .75s;
+      animation-fill-mode: backwards;
+    } 
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+      font-size: 1.4rem;
+      color: $color-dark-red;
+      display:inline-block;
+      text-decoration:none;
+      border-bottom: 1px solid $color-dark-red;
+      padding:3px;
+      transition: all .2s;
+
+    }
+
+    &:hover{
+      background-color:$color-dark-red;
+      color: wheat;
+      box-shadow: 0 1rem 2rem $grey;
+      transform: translateY(-2px) ;
+
+    
+
+       &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+    }    
+
+    &:active {
+      box-shadow: 0 .5rem 1rem rgb(65, 64, 64) ;
+      transform: translateY(0);
+    }
+}

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    // font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-dark-red;
+
+}
+
+.heading-primary {
+    color: $color-dark-red;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6.0rem;    
+    
+
+    &--main { 
+        display: block;
+        font-size: 6rem;
+        font-weight: 2em;
+        letter-spacing: 3rem;
+        animation-name: MoveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        // &:not(:last-child) {
+        //     letter-spacing: 3rem;
+        // }
+                
+
+        @include respond(phone) {
+           font-size: 4rem;
+           letter-spacing: .5; 
+        }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 40rem;
+        letter-spacing: 1rem;
+        animation: MoveInRight 1s ease-out;
+    }
+
+    @include respond(phone) {
+        // font-size: 5rem;
+        letter-spacing: .1rem;
+    }
+}
+
+.heading-pre_secondary {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    // display: inline-block;
+    background-image: linear-gradient(to right, rgb(238, 61, 17), $color-dark-red);
+    -webkit-background-clip : text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, rgb(238, 61, 17), $color-dark-red);
+    -webkit-background-clip : text;
+    color: transparent;
+    letter-spacing: .4rem;
+    transition: all .2;
+
+    &:hover {
+        transform: skewX(2deg) skewY(2deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgb(92, 91, 91);
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1rem; 
+}
+
+.paragraph {
+    font-size: 1.4rem;
+
+
+    &:not(last-child) {
+        margin-bottom: 3rem;
+    }
+}
